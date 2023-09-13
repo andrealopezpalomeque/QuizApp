@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_app" translatesAutoresizingMaskIntoConstraints="NO" id="PAR-TG-Hh4">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="oCR-Q5-hTv">
+                                <rect key="frame" x="25" y="69" width="343" height="729"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aU-qX-deR">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="njB-fk-n2J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="himalaya" translatesAutoresizingMaskIntoConstraints="NO" id="cRV-us-aQv">
+                                        <rect key="frame" x="0.0" y="104" width="343" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="kGZ-YE-tlt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Himalayas are the highest mountain range on Earth, at 8850 m asl." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A32-Gs-Cv9">
+                                        <rect key="frame" x="0.0" y="348" width="343" height="129"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="ryK-Gj-xEE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="69d-bO-Ooo">
+                                        <rect key="frame" x="0.0" y="541" width="343" height="116"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nl9-dW-5Xs">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="3dg-gN-PWU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="TRUE"/>
+                                                <connections>
+                                                    <action selector="usersAnswerButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zao-q6-ZCE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evf-Wj-cfk">
+                                                <rect key="frame" x="0.0" y="66" width="343" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="FALSE"/>
+                                                <connections>
+                                                    <action selector="usersAnswerButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvd-Ma-CvC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EHk-WK-6pN">
+                                        <rect key="frame" x="0.0" y="721" width="343" height="8"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="8" id="Td0-c9-804"/>
+                                            <constraint firstAttribute="height" constant="8" id="mzf-5x-Kyu"/>
+                                        </constraints>
+                                    </progressView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="EHk-WK-6pN" firstAttribute="top" secondItem="69d-bO-Ooo" secondAttribute="bottom" constant="30" id="cdV-jW-2AC"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PAR-TG-Hh4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9bs-Pk-BRw"/>
+                            <constraint firstItem="oCR-Q5-hTv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="GWR-6L-7Si"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oCR-Q5-hTv" secondAttribute="bottom" constant="20" id="I1A-Go-2v2"/>
+                            <constraint firstItem="oCR-Q5-hTv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Vm3-2M-zNI"/>
+                            <constraint firstAttribute="bottom" secondItem="PAR-TG-Hh4" secondAttribute="bottom" id="Xkk-Eb-29R"/>
+                            <constraint firstAttribute="trailing" secondItem="oCR-Q5-hTv" secondAttribute="trailing" constant="25" id="cii-4l-f9l"/>
+                            <constraint firstItem="PAR-TG-Hh4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sND-bu-yYg"/>
+                            <constraint firstItem="PAR-TG-Hh4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wC5-me-AyK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="falseButton" destination="evf-Wj-cfk" id="MHo-Mw-P5z"/>
+                        <outlet property="imageQuestion" destination="cRV-us-aQv" id="4Tu-CU-hqG"/>
+                        <outlet property="progressQuiz" destination="EHk-WK-6pN" id="RL3-9M-F11"/>
+                        <outlet property="scoreLabel" destination="4aU-qX-deR" id="vy1-H0-hwX"/>
+                        <outlet property="textQuestion" destination="A32-Gs-Cv9" id="WQG-by-UH4"/>
+                        <outlet property="trueButton" destination="nl9-dW-5Xs" id="ezZ-eC-XsI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_app" width="4125" height="6187"/>
+        <image name="himalaya" width="3936" height="2624"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
