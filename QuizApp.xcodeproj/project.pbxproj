@@ -56,6 +56,9 @@
 		4F2E7FEB2AB14077004EE867 /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				4F2E80022AB14151004EE867 /* Controller */,
+				4F2E80012AB1414C004EE867 /* View */,
+				4F2E80002AB14143004EE867 /* Model */,
 				4F2E7FEC2AB14077004EE867 /* AppDelegate.swift */,
 				4F2E7FEE2AB14077004EE867 /* SceneDelegate.swift */,
 				4F2E7FF02AB14077004EE867 /* ViewController.swift */,
@@ -65,6 +68,27 @@
 				4F2E7FFA2AB14078004EE867 /* Info.plist */,
 			);
 			path = QuizApp;
+			sourceTree = "<group>";
+		};
+		4F2E80002AB14143004EE867 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F2E80012AB1414C004EE867 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F2E80022AB14151004EE867 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
