@@ -22,3 +22,7 @@ The Quiz App follows the Model-View-Controller (MVC) architecture to ensure clar
 - View: The view is responsible for presenting the user interface (UI) to the user. It displays the questions, answer buttons, and the score.
 
 - Controller: The controller acts as the intermediary between the model and view. It handles user interactions, updates the model with the user's answers, and updates the view accordingly.
+
+## Screenshots
+
+![Quiz App Screenshot](images/01-quizapp_screen.png)
