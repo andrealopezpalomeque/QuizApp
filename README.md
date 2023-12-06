@@ -25,4 +25,4 @@ The Quiz App follows the Model-View-Controller (MVC) architecture to ensure clar
 
 ## Screenshots
 
-![Quiz App Screenshot](images/01-quizapp_screen.png)
+<img src="images/01-quizapp_screen.png" alt="Screenshot 1" width="300">
